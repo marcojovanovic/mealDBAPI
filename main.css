@@ -1,0 +1,212 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+
+body{
+
+
+  font-family: 'Source Sans Pro', sans-serif;
+  background: #2d2013;
+  color:white;
+}
+
+
+.container{
+  max-width: 1500px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+ align-items: center;
+ text-align: center;
+ margin: auto;
+ 
+}
+
+.meal-title{
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+  font-size: 3rem;
+}
+
+.meal-text{
+
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  font-weight: bolder;
+  opacity: 0;
+  font-size: 1.5rem;
+}
+
+.relative-content{
+
+  position: relative !important;
+  width: 20rem;
+  margin-right:2rem;
+
+}
+
+
+.img-wrapper{
+  position: absolute;
+  top:0;
+  left:0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.7);
+  z-index: 1;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+
+}
+
+.responsive-img{
+
+  width: 100%;
+  border:4px solid white;
+  transition: 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  color:red;
+ 
+}
+
+.relative-content:hover .img-wrapper{
+  opacity: 1;
+}
+
+.relative-content:hover .meal-text{
+
+  opacity: 1 !important;
+ }
+ 
+ 
+.meal-input{
+  padding: 0.36rem;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  outline: none;
+  width: 20rem;
+
+
+}
+
+.fa-search{
+  color:#333 !important;
+}
+
+
+.fa-random{
+
+  color:#333;
+}
+
+.flex-input{
+
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.input-search {
+
+  padding: 0.34rem;
+  background: #f4f4f4;
+  margin-left: 0.1rem;
+  cursor: pointer;
+
+
+}
+
+
+h3{
+
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+
+.name{
+
+  color:rgb(231, 50, 50);
+}
+
+
+ul li{
+  list-style: none;
+}
+
+
+.flex-result{
+  display: flex;
+  justify-content: center;
+
+}
+
+.img-responsive{
+
+  width: 35rem;
+
+}
+
+.mealInfo-container{
+
+  margin-top: 4rem;
+  height: 100vh;
+  
+
+border-top:2px dotted brown ;
+}
+
+.meal-title{
+
+  margin-bottom: 2rem;
+}
+
+.border{
+
+  border:2px dotted brown;
+  padding: 2rem;
+  line-height: 1.7;
+  margin-top: 0.5rem;
+
+}
+
+.meal-subtitle{
+
+  font-size: 2rem;
+
+}
+
+.flex-ingredient{
+
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  
+
+
+}
+
+.ingridi{
+
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  background: white;
+  color:#333;
+  margin-right: 0.5rem;
+  margin-bottom: 5rem;
+  transition: 0.3s ease;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.ingridi:hover{
+
+  background: brown;
+}
